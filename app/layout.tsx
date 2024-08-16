@@ -1,6 +1,5 @@
 import "./globals.css";
-import { Manrope as FontSans } from "next/font/google";
-import { Literata as FontSerif } from "next/font/google";
+import { Roboto_Mono as FontMono } from "next/font/google";
 import { ReactNode } from "react";
 
 import { Layout } from "@/components/craft";
@@ -23,14 +22,9 @@ interface RootLayoutProps {
 
 import { cn } from "@/lib/utils";
 
-const fontSans = FontSans({
+const fontMono = FontMono({
   subsets: ["latin"],
-  variable: "--font-sans",
-});
-
-const fontSerif = FontSerif({
-  subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-mono",
 });
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -38,9 +32,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <Layout>
       <body
         className={cn(
-          "my-6 sm:my-12 font-sans max-w-2xl mx-auto antialiased selection:bg-indigo-500 selection:text-indigo-100",
+          "my-6 sm:my-12 font-mono max-w-2xl mx-auto antialiased selection:bg-indigo-500 selection:text-indigo-100",
           "fade-in",
-          fontSans.variable
+          fontMono.variable
         )}
       >
         <ThemeProvider

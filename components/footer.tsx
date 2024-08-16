@@ -1,14 +1,8 @@
 export default function Footer() {
   return (
     <footer className="fade-in-3 mb-12 mt-8 md:mt-24">
-      <a
-        href="https://x.com/realjosephreese"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-sm text-muted-foreground"
-      >
-        © Joseph Reese, 2024
-      </a>
+      <p className="font-mono italic">Great things take time and the touch of a legend to bring them to life. Connect with me, and let’s make it happen.</p>
+      <p>&copy; 2024</p>
     </footer>
   );
 }
