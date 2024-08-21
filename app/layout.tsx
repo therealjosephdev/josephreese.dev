@@ -32,7 +32,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <Layout>
       <body
         className={cn(
-          "my-6 sm:my-12 font-mono max-w-2xl mx-auto antialiased selection:bg-indigo-500 selection:text-indigo-100",
+          "my-6 sm:my-12 font-mono max-w-2xl mx-auto antialiased selection:bg-green-500 selection:text-green-100",
           "fade-in",
           fontMono.variable
         )}
